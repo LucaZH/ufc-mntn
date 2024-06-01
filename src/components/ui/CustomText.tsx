@@ -10,7 +10,7 @@ function CustomText({ text }: { text: string }) {
       >
         <rect width="72" height="2" fill="#FBD784" />
       </svg>
-      <span className="font-semibold">{text}</span>
+      <span className="font-semibold font-mono">{text}</span>
     </div>
   );
 }
