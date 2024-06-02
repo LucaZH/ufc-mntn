@@ -11,14 +11,14 @@ const Navbar: FC = () => {
   return (
     <nav className="flex justify-between text-white px-16 py-5">
       <div className="text-white font-bold">MNTN</div>
-      <ul className="flex gap-10">
+      <ul className="hidden md:flex gap-10">
         {navItems.map((link, index) => (
           <li key={index}>
             <a href={link.url}>{link.name}</a>
           </li>
         ))}
       </ul>
-      <div className="flex gap-2 justify-center content-center">
+      <div className="hidden md:flex gap-2 justify-center content-center">
         <svg
           width="24"
           height="24"
@@ -51,6 +51,19 @@ const Navbar: FC = () => {
         </svg>
         <a href="#">Account</a>
       </div>
+      <button
+        type="button"
+        className="-my-1 -mr-1 ml-6 flex h-8 w-8 justify-end lg:hidden md:hidden"
+      >
+        <svg viewBox="0 0 24 24" className="h-6 w-6 stroke-white">
+          <path
+            d="M3.75 12h16.5M3.75 6.75h16.5M3.75 17.25h16.5"
+            fill="none"
+            strokeWidth="1.5"
+            strokeLinecap="round"
+          ></path>
+        </svg>
+      </button>
     </nav>
   );
 };
