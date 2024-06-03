@@ -1,3 +1,4 @@
+import Arcticle from "./components/Article";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Pagination from "./components/ui/Pagination";
@@ -7,7 +8,10 @@ function App() {
     <>
       <Pagination />
       <div>
-        <img src="/img/HG.png" className="w-full absolute -z-50 cloud" />
+        <img
+          src="/img/HG.png"
+          className="w-full h-96 md:h-full absolute -z-50 cloud"
+        />
         <svg
           width="100%"
           height="1200"
@@ -33,6 +37,27 @@ function App() {
         </svg>
         <Navbar />
         <Hero />
+      </div>
+      <div className="md:-mt-80">
+        {" "}
+        <Arcticle
+          id="01"
+          span="01"
+          title="What level of hiker are you?"
+          desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, animi nesciunt explicabo aliquam quo atque voluptates sit modi alias, libero recusandae natus incidunt? Velit quis molestias ex, a saepe omnis?"
+          link="#link"
+          reversed={false}
+          img="/img/01.png"
+        />
+        <Arcticle
+          id="01"
+          span="01"
+          title="What level of hiker are you?"
+          desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, animi nesciunt explicabo aliquam quo atque voluptates sit modi alias, libero recusandae natus incidunt? Velit quis molestias ex, a saepe omnis?"
+          link="#link"
+          reversed={true}
+          img="/img/01(1).png"
+        />
       </div>
     </>
   );
