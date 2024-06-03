@@ -9,12 +9,14 @@ const Navbar: FC = () => {
   ];
 
   return (
-    <nav className="flex justify-between text-white px-16 py-5">
-      <div className="text-white font-bold">MNTN</div>
+    <nav className="flex justify-between text-white px-16 py-5 items-center">
+      <div className="text-white font-bold font-serif text-2xl">MNTN</div>
       <ul className="hidden md:flex gap-10">
         {navItems.map((link, index) => (
           <li key={index}>
-            <a href={link.url}>{link.name}</a>
+            <a href={link.url} className="font-semibold">
+              {link.name}
+            </a>
           </li>
         ))}
       </ul>
