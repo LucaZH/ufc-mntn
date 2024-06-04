@@ -1,4 +1,4 @@
-import Arcticle from "./components/Article";
+import Articls from "./components/Articls";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Pagination from "./components/ui/Pagination";
@@ -39,25 +39,7 @@ function App() {
         <Hero />
       </div>
       <div className="md:-mt-80">
-        {" "}
-        <Arcticle
-          id="01"
-          span="01"
-          title="What level of hiker are you?"
-          desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, animi nesciunt explicabo aliquam quo atque voluptates sit modi alias, libero recusandae natus incidunt? Velit quis molestias ex, a saepe omnis?"
-          link="#link"
-          reversed={false}
-          img="/img/01.png"
-        />
-        <Arcticle
-          id="01"
-          span="01"
-          title="What level of hiker are you?"
-          desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, animi nesciunt explicabo aliquam quo atque voluptates sit modi alias, libero recusandae natus incidunt? Velit quis molestias ex, a saepe omnis?"
-          link="#link"
-          reversed={true}
-          img="/img/01(1).png"
-        />
+        <Articls />
       </div>
     </>
   );
