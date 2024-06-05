@@ -3,6 +3,7 @@ import Articls from "./components/Articls";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Pagination from "./components/ui/Pagination";
+import Footer from "./components/Footer";
 
 function App() {
   const [activeSection, setActiveSection] = useState(1);
@@ -55,6 +56,7 @@ function App() {
       <div className="md:-mt-80">
         <Articls />
       </div>
+      <Footer />
     </>
   );
 }
