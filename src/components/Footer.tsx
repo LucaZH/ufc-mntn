@@ -14,55 +14,57 @@ function Footer() {
             </a>
           </p>
         </div>
-        <div className="mb-6 md:mb-0">
-          <h3 className="font-bold text-yellow-400">More on The Blog</h3>
-          <ul className="mt-4 space-y-2">
-            <li>
-              <a href="#" className="text-white hover:underline">
-                About MNTN
-              </a>
-            </li>
-            <li>
-              <a href="#" className="text-white hover:underline">
-                Contributors & Writers
-              </a>
-            </li>
-            <li>
-              <a href="#" className="text-white hover:underline">
-                Write For Us
-              </a>
-            </li>
-            <li>
-              <a href="#" className="text-white hover:underline">
-                Contact Us
-              </a>
-            </li>
-            <li>
-              <a href="#" className="text-white hover:underline">
-                Privacy Policy
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <h3 className="font-bold text-yellow-400">More on MNTN</h3>
-          <ul className="mt-4 space-y-2">
-            <li>
-              <a href="#" className="text-white hover:underline">
-                The Team
-              </a>
-            </li>
-            <li>
-              <a href="#" className="text-white hover:underline">
-                Jobs
-              </a>
-            </li>
-            <li>
-              <a href="#" className="text-white hover:underline">
-                Press
-              </a>
-            </li>
-          </ul>
+        <div className="flex gap-8 md:gap-44 lg:gap-60">
+          <div className="mb-6 md:mb-0">
+            <h3 className="font-bold text-yellow-400">More on The Blog</h3>
+            <ul className="mt-4 space-y-2">
+              <li>
+                <a href="#" className="text-white hover:underline">
+                  About MNTN
+                </a>
+              </li>
+              <li>
+                <a href="#" className="text-white hover:underline">
+                  Contributors & Writers
+                </a>
+              </li>
+              <li>
+                <a href="#" className="text-white hover:underline">
+                  Write For Us
+                </a>
+              </li>
+              <li>
+                <a href="#" className="text-white hover:underline">
+                  Contact Us
+                </a>
+              </li>
+              <li>
+                <a href="#" className="text-white hover:underline">
+                  Privacy Policy
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 className="font-bold text-yellow-400">More on MNTN</h3>
+            <ul className="mt-4 space-y-2">
+              <li>
+                <a href="#" className="text-white hover:underline">
+                  The Team
+                </a>
+              </li>
+              <li>
+                <a href="#" className="text-white hover:underline">
+                  Jobs
+                </a>
+              </li>
+              <li>
+                <a href="#" className="text-white hover:underline">
+                  Press
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </footer>
