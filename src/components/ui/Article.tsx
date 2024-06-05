@@ -20,7 +20,7 @@ function Arcticle({
 }) {
   return (
     <div
-      className={`space-y-10 px-14 mb-32 text-white md:flex md:justify-center md:gap-20 md:space-y-0 lg:md:space-y-0 md:px-56 ${
+      className={`space-y-10 px-14 mb-32 text-white md:flex md:justify-center md:gap-20 md:space-y-0 lg:md:space-y-0 md:px-36 ${
         reversed ? "md:flex-row-reverse" : "md:flex-row"
       }`}
     >
