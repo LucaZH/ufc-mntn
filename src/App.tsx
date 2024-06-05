@@ -1,12 +1,26 @@
+import { useState, useEffect } from "react";
 import Articls from "./components/Articls";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Pagination from "./components/ui/Pagination";
 
 function App() {
+  const [activeSection, setActiveSection] = useState(1);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentSection = Math.floor(window.scrollY / 600) + 1;
+      setActiveSection(currentSection);
+    };
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     <>
-      <Pagination />
+      <Pagination activeSection={activeSection} />
       <div>
         <img
           src="/img/HG.png"
