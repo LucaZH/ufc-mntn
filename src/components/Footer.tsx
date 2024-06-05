@@ -16,7 +16,7 @@ function Footer() {
         </div>
         <div className="flex gap-8 md:gap-44 lg:gap-60">
           <div className="mb-6 md:mb-0">
-            <h3 className="font-bold text-yellow-400">More on The Blog</h3>
+            <h3 className="font-bold text-cyellow">More on The Blog</h3>
             <ul className="mt-4 space-y-2">
               <li>
                 <a href="#" className="text-white hover:underline">
@@ -46,7 +46,7 @@ function Footer() {
             </ul>
           </div>
           <div>
-            <h3 className="font-bold text-yellow-400">More on MNTN</h3>
+            <h3 className="font-bold text-cyellow">More on MNTN</h3>
             <ul className="mt-4 space-y-2">
               <li>
                 <a href="#" className="text-white hover:underline">

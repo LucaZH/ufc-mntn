@@ -32,7 +32,7 @@ function Arcticle({
           <p className="mt-4">{desc}</p>
           <a
             href={link}
-            className="text-[#FBD784] font-semibold font-mono text-sm mt-4 flex items-center gap-2 w-fit"
+            className="text-cyellow font-semibold font-mono text-sm mt-4 flex items-center gap-2 w-fit"
           >
             Read more
             <svg

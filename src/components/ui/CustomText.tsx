@@ -1,6 +1,6 @@
 function CustomText({ text }: { text: string }) {
   return (
-    <div className="flex text-[#FBD784] items-center gap-4 text-sm">
+    <div className="flex text-cyellow items-center gap-4 text-sm">
       <svg
         width="72"
         height="2"
