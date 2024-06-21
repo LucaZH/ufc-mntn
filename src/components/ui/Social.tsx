@@ -1,4 +1,6 @@
-function Social() {
+import { FC } from "react";
+
+const Social: FC = () => {
   return (
     <div className="flex flex-col gap-4 absolute">
       <p className="writing-mode-vertical-rl font-semiblod">Follow us</p>
@@ -28,5 +30,5 @@ function Social() {
       </svg>
     </div>
   );
-}
+};
 export default Social;

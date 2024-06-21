@@ -1,4 +1,6 @@
-function CustomText({ text }: { text: string }) {
+import { FC } from "react";
+
+const CustomText: FC<{ text: string }> = ({ text }) => {
   return (
     <div className="flex text-cyellow items-center gap-4 text-sm">
       <svg
@@ -13,5 +15,6 @@ function CustomText({ text }: { text: string }) {
       <span className="font-semibold font-mono">{text}</span>
     </div>
   );
-}
+};
+
 export default CustomText;

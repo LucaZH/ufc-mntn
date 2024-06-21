@@ -1,6 +1,7 @@
+import { FC } from "react";
 import Arcticle from "./ui/Article";
 
-function Articls() {
+const Articls: FC = () => {
   const articleItems = [
     {
       id: "01",
@@ -45,5 +46,5 @@ function Articls() {
       ))}
     </section>
   );
-}
+};
 export default Articls;

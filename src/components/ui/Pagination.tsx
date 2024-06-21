@@ -1,4 +1,6 @@
-function Pagination({ activeSection }: { activeSection: number }) {
+import { FC } from "react";
+
+const Pagination: FC<{ activeSection: number }> = ({ activeSection }) => {
   return (
     <div className="hidden lg:flex md:flex flex-col gap-1 text-right fixed right-16 top-1/3 text-white">
       <p
@@ -31,5 +33,5 @@ function Pagination({ activeSection }: { activeSection: number }) {
       </p>
     </div>
   );
-}
+};
 export default Pagination;
