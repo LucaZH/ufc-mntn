@@ -1,7 +1,9 @@
+import ArticleProps from "../../types/ArticleProps";
 import CustomText from "./CustomText";
 import Num from "./Num";
+import { FC } from "react";
 
-function Arcticle({
+const Article: FC<ArticleProps> = ({
   id,
   span,
   title,
@@ -9,15 +11,7 @@ function Arcticle({
   link,
   reversed,
   img,
-}: {
-  id: string;
-  span: string;
-  title: string;
-  desc: string;
-  link: string;
-  reversed: boolean;
-  img: string;
-}) {
+}) => {
   return (
     <div
       className={`space-y-10 px-14 mb-32 text-white md:flex md:justify-center md:gap-20 md:space-y-0 lg:md:space-y-0 md:px-36 ${
@@ -44,9 +38,9 @@ function Arcticle({
               <path
                 d="M5 12H19M19 12L13 6M19 12L13 18"
                 stroke="#FBD784"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               />
             </svg>
           </a>
@@ -55,5 +49,6 @@ function Arcticle({
       <img src={img} className="w-11/12 h-4/5" />
     </div>
   );
-}
-export default Arcticle;
+};
+
+export default Article;
