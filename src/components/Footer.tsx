@@ -1,4 +1,5 @@
-function Footer() {
+import { FC } from "react";
+const Footer: FC = () => {
   return (
     <footer className="text-white pb-10 px-14 md:px-36">
       <div className="container mx-auto flex flex-col md:flex-row justify-between">
@@ -69,5 +70,5 @@ function Footer() {
       </div>
     </footer>
   );
-}
+};
 export default Footer;
